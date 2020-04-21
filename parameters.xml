@@ -1383,6 +1383,25 @@
             </dimension>
         </dimensions>
     </parameter>
+    <parameter name="seg_cum_area">
+        <type>F</type>
+        <units>acres</units>
+        <desc>Cumulative area for each stream segment</desc>
+        <minimum>0.0</minimum>
+        <maximum>1000000000.0</maximum>
+        <default>0.0</default>
+        <modules>
+            <module>muskingum</module>
+            <module>muskingum_mann</module>
+            <module>mizuroute</module>
+        </modules>
+        <dimensions>
+            <dimension name="nsegment">
+                <position>1</position>
+                <size>56460</size>
+            </dimension>
+        </dimensions>
+    </parameter>
     <parameter name="seg_depth">
         <type>F</type>
         <units>meter</units>
